@@ -19,7 +19,6 @@
     overflow: hidden;
   }
   
-  /* Background image and overlay */
   .hero-wrapper::before {
     content: "";
     position: absolute;
@@ -27,14 +26,15 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background: 
+    background:
       linear-gradient(rgba(16, 16, 16, 0.5), rgba(16, 16, 16, 0.5)),
       url("assets/unnamed.jpg");
-    background-size: cover;
-    background-position: center;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-position: center;
     z-index: -1;
   }
+  
   
   /* Navbar styling */
   .nav-bar {
@@ -85,3 +85,24 @@
     line-height: 1.6;
   }
   
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .img-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+  }
+
+    .img-container img {
+        width: 100px;
+        height: 100px;
+        border-radius: 20%;
+    }
