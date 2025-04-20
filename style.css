@@ -1,0 +1,9 @@
+*::selection {
+    background: black;
+    color: white;
+  }
+
+  li::marker {
+    color: red;
+    font-size: 2rem;
+  }
