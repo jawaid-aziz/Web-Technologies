@@ -1,0 +1,87 @@
+/* Global reset and font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Hero wrapper as full screen container */
+  .hero-wrapper {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* navbar at top, hero centered */
+    color: white;
+    overflow: hidden;
+  }
+  
+  /* Background image and overlay */
+  .hero-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: 
+      linear-gradient(rgba(16, 16, 16, 0.5), rgba(16, 16, 16, 0.5)),
+      url("assets/unnamed.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  
+  /* Navbar styling */
+  .nav-bar {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    width: 100%;
+  }
+  
+  /* Navbar menu items */
+  .nav-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    font-weight: bold;
+  }
+  
+  .nav-bar ul li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  /* Hero section (centered content) */
+  .hero-section {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px; /* horizontal only */
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
