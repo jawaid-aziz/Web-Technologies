@@ -4,66 +4,96 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Practice</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+          margin: 0;
+          font-family: sans-serif;
+        }
+    
+        header {
+          background: #333;
+          color: white;
+          padding: 20px;
+          text-align: center;
+        }
+    
+        nav {
+          background: #444;
+          display: flex;
+          justify-content: center;
+          gap: 30px;
+          padding: 15px;
+        }
+    
+        nav a {
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+        }
+    
+        .container {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          padding: 20px;
+          justify-content: center;
+        }
+    
+        .card {
+          background: #f2f2f2;
+          padding: 20px;
+          width: 300px;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    
+        footer {
+          background: #333;
+          color: white;
+          text-align: center;
+          padding: 20px;
+          margin-top: 40px;
+        }
+    
+        /* MEDIA QUERIES */
+        @media (max-width: 600px) {
+          nav {
+            flex-direction: column;
+            align-items: center;
+          }
+    
+          .card {
+            width: 90%;
+          }
+    
+          header, footer {
+            font-size: 14px;
+          }
+        }
+      </style>
   </head>
   <body>
-    <h1 id="head"><tt>Heading 1</tt></h1>
-    <hr width="50%" color="blue" size="2" />
-    <h2>Heading <strike>world</strike></h2>
-    <hr />
-    <h3>Heading 3</h3>
-    <table border="1" width="100%" cellpadding="5" cellspacing="5" align="center">
-        <caption>Table Caption</caption>
-        <thead>
-            <tr>
-            <th>Header 1</th>
-            <th>Header 2</th>
-            <th colspan="3">Header 3</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-            <td rowspan="2">Row 1 Col 1</td>
-            <td>Row 1 Col 2</td>
-            <td colspan="3">Row 1 Col 3</td>
-            </tr>
-            <tr>
-            <td>Row 2 Col 1</td>
-            <td>Row 2 Col 2</td>
-            <td>Row 2 Col 3</td>
-            </tr>
-        </tbody>
-    </table>
-    <a href="https://sis.cuiatd.edu.pk/" target="_top">Click</a>
-    <del>blue</del>
-    <ins>hello</ins>
-    <abbr title="CS">CS</abbr>
-    <p>10<sup>5</sup></p>
-    <blockquote>The name is Javaid Memon.</blockquote>
-    <q>Hello dear</q>
-    <p>My name is <b>Javaid Memon</b></p>
-    <p>My name is <i>Javaid Memon</i></p>
-    <ol type="A" start="3" reversed>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-    </ol>
-    <ul type="" start="3">
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-    </ul>
-    <p>
-        <ol>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ol>
-    </p>
-    <a href="#head">Click</a>
-        <dl>
-            <dt>HTML <dd>Markup Language</dd> </dt>
-        </dl>
-    </a>
+    <header>
+        <h1>My Responsive Website</h1>
+      </header>
+    
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    
+      <div class="container">
+        <div class="card">Card 1 Content</div>
+        <div class="card">Card 2 Content</div>
+        <div class="card">Card 3 Content</div>
+      </div>
+    
+      <footer>
+        &copy; 2025 My Website. All rights reserved.
+      </footer>
+
+
   </body>
 </html>
