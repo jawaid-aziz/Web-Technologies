@@ -5,95 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Practice</title>
     <link rel="stylesheet" href="style.css" />
-    <style>
-        body {
-          margin: 0;
-          font-family: sans-serif;
-        }
-    
-        header {
-          background: #333;
-          color: white;
-          padding: 20px;
-          text-align: center;
-        }
-    
-        nav {
-          background: #444;
-          display: flex;
-          justify-content: center;
-          gap: 30px;
-          padding: 15px;
-        }
-    
-        nav a {
-          color: white;
-          text-decoration: none;
-          font-weight: bold;
-        }
-    
-        .container {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 20px;
-          padding: 20px;
-          justify-content: center;
-        }
-    
-        .card {
-          background: #f2f2f2;
-          padding: 20px;
-          width: 300px;
-          border-radius: 10px;
-          box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-    
-        footer {
-          background: #333;
-          color: white;
-          text-align: center;
-          padding: 20px;
-          margin-top: 40px;
-        }
-    
-        /* MEDIA QUERIES */
-        @media (max-width: 600px) {
-          nav {
-            flex-direction: column;
-            align-items: center;
-          }
-    
-          .card {
-            width: 90%;
-          }
-    
-          header, footer {
-            font-size: 14px;
-          }
-        }
-      </style>
   </head>
   <body>
-    <header>
-        <h1>My Responsive Website</h1>
-      </header>
-    
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+    <nav class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li class="dropdown">
+            <a href="#">Services ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Design</a></li>
+              <li><a href="#">Development</a></li>
+              <li><a href="#">SEO</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </nav>
-    
-      <div class="container">
-        <div class="card">Card 1 Content</div>
-        <div class="card">Card 2 Content</div>
-        <div class="card">Card 3 Content</div>
-      </div>
-    
-      <footer>
-        &copy; 2025 My Website. All rights reserved.
-      </footer>
-
-
+      
+      <style>
+      .navbar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background: #333;
+        display: flex;
+      }
+      
+      .navbar ul li {
+        position: relative;
+      }
+      
+      .navbar a {
+        color: white;
+        padding: 15px 20px;
+        display: block;
+        text-decoration: none;
+      }
+      
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        background: #555;
+        top: 100%;
+        left: 0;
+        min-width: 150px;
+      }
+      
+      .dropdown-menu li {
+        border-bottom: 1px solid #444;
+      }
+      
+      .dropdown:hover .dropdown-menu {
+        display: block;
+      }
+      
+      .dropdown-menu a:hover {
+        background: #666;
+      }
+      </style>
+      
   </body>
 </html>
