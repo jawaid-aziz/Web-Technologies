@@ -1,68 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Practice</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav class="navbar">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li class="dropdown">
-            <a href="#">Services ▾</a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Design</a></li>
-              <li><a href="#">Development</a></li>
-              <li><a href="#">SEO</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-      
-      <style>
-      .navbar ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        background: #333;
-        display: flex;
-      }
-      
-      .navbar ul li {
-        position: relative;
-      }
-      
-      .navbar a {
-        color: white;
-        padding: 15px 20px;
-        display: block;
-        text-decoration: none;
-      }
-      
-      .dropdown-menu {
-        display: none;
-        position: absolute;
-        background: #555;
-        top: 100%;
-        left: 0;
-        min-width: 150px;
-      }
-      
-      .dropdown-menu li {
-        border-bottom: 1px solid #444;
-      }
-      
-      .dropdown:hover .dropdown-menu {
-        display: block;
-      }
-      
-      .dropdown-menu a:hover {
-        background: #666;
-      }
-      </style>
-      
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web-tech</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="input-div" id="input-div">
+    <input type="text" id="todo">
+    <button id="add">Add To-Do Item</button>
+  </div>
+  <div class="list-div" id="list-div">
+    <ul id="toDoList">
+
+    </ul>
+  </div>
+
+  <script src="index.js"></script>
+</body>
 </html>
