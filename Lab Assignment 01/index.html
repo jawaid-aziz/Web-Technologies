@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web-tech</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  .header {
+    text-align: center;
+  }
+  .top-iframe {
+    width: 100%;
+    height: 80vh;
+    border: none;
+  }
+  .center-frame {
+    display: flex;
+    justify-content: space-between;
+    
+    width: 100%;
+  }
+  .left-iframe {
+    width: 30%;
+    border: none;
+  }
+  .right-iframe {
+    width: 70%;
+    border: none;
+  }
+  .bottom-iframe {
+    width: 100%;
+    height: 20vh;
+    border: none;
+  }
+</style>
+<body>
+  <h1 class="header">Lab Assignment No. 01</h1>
+  <iframe class="top-iframe" src="topFrame.html" frameborder="1"></iframe>
+  <div class="center-frame">
+    <iframe class="left-iframe" src="leftFrame.html" frameborder="1"></iframe>
+  </div>
+  <iframe class="bottom-iframe" src="bottomFrame.html" frameborder="1"></iframe>
+</body>
+</html>
